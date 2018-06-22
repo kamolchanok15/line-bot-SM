@@ -1,11 +1,11 @@
 <?php
 header("content-type:application/json");
-//$jsondata = file_get_contents("https://commember14.000webhostapp.com/show1.php");
+//$jsondata = file_get_contents("https://ampizz.000webhostapp.com/show.php");
 
 //echo $jsondata
 
 // Read JSON Decode //
-    $jsonCode = file_get_contents("https://ampizz.000webhostapp.com/show1.php");
+    $jsonCode = file_get_contents("https://ampizz.000webhostapp.com/show.php");
 	$jsonDecode = json_decode($jsonCode, true);
 
 	foreach ($jsonDecode as $objResult)
