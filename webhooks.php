@@ -266,7 +266,7 @@ if(!is_null($events)){
                                 // $userData['displayName']
                                 // $userData['pictureUrl']
                                 // $userData['statusMessage']
-                                $textReplyMessage = 'วันที่' .' ' .$objResult['date'] .' ' .'มีอุณหภูมิ' .' ' .$objResult['id'] .' ' .'องศาเซลเซียส' .' ' .'มีความชื้น' .' ' .$objResult['humidity'] .' ' .'RH';     
+                                $textReplyMessage = 'วันที่' .' ' .$objResult["date"] .' ' .'มีอุณหภูมิ' .' ' .$objResult["temp"] .' ' .'ํC' .' ' .'มีความชื้น' .' ' .$objResult["humidity"] .' ' .'RH';     
                             }else{
                                 $textReplyMessage = 'สวัสดีจ้า คุณคือใคร';
                             }
@@ -289,7 +289,7 @@ if(!is_null($events)){
                                 // $userData['displayName']
                                 // $userData['pictureUrl']
                                 // $userData['statusMessage']
-                                $textReplyMessage = 'วันที่' .' ' .$objResult['date'] .' ' .'มีอุณหภูมิ' .' ' .$objResult['id'] .' ' .'องศาเซลเซียส' .' ' .'มีความชื้น' .' ' .$objResult['humidity'] .' ' .'RH';     
+                                $textReplyMessage = 'วันที่' .' ' .$objResult["date"] .' ' .'มีอุณหภูมิ' .' ' .$objResult["temp"] .' ' .'ํC' .' ' .'มีความชื้น' .' ' .$objResult["humidity"] .' ' .'RH';     
                             }else{
                                 $textReplyMessage = 'สวัสดีจ้า คุณคือใคร';
                             }
@@ -312,7 +312,7 @@ if(!is_null($events)){
                                 // $userData['displayName']
                                 // $userData['pictureUrl']
                                 // $userData['statusMessage']
-                                $textReplyMessage = 'วันที่' .' ' .$objResult['date'] .' ' .'มีอุณหภูมิ' .' ' .$objResult['id'] .' ' .'องศาเซลเซียส' .' ' .'มีความชื้น' .' ' .$objResult['humidity'] .' ' .'RH';     
+                                $textReplyMessage = 'วันที่' .' ' .$objResult["date"] .' ' .'มีอุณหภูมิ' .' ' .$objResult["id"] .' ' .'ํC' .' ' .'มีความชื้น' .' ' .$objResult["humidity"] .' ' .'RH';     
                             }else{
                                 $textReplyMessage = 'สวัสดีจ้า คุณคือใคร';
                             }
