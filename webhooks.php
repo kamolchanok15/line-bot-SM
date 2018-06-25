@@ -220,7 +220,30 @@ if(!is_null($events)){
                                 // $userData['displayName']
                                 // $userData['pictureUrl']
                                 // $userData['statusMessage']
-                                $textReplyMessage = 'สวัสดีจ้า มีอะไรให้รับใช้ครับเจ้านาย';     
+                                $textReplyMessage = 'สวัสดีจ้ะคุณพี่ ต้องการทราบอะไรจ๊ะ';     
+                            }else{
+                                $textReplyMessage = 'สวัสดีจ้า คุณคือใคร';
+                            }
+                            $replyData = new TextMessageBuilder($textReplyMessage);                                                 
+                        break;
+                  case "hello":
+                            if(!is_null($groupId) || !is_null($roomId)){
+                                if($eventObj->isGroupEvent()){
+                                    $response = $bot->getGroupMemberProfile($groupId, $userId);
+                                }
+                                if($eventObj->isRoomEvent()){
+                                    $response = $bot->getRoomMemberProfile($roomId, $userId);    
+                                }
+                            }else{
+                                $response = $bot->getProfile($userId);
+                            }
+                            if ($response->isSucceeded()) {
+                                $userData = $response->getJSONDecodedBody(); // return array     
+                                // $userData['userId']
+                                // $userData['displayName']
+                                // $userData['pictureUrl']
+                                // $userData['statusMessage']
+                                $textReplyMessage = 'Hello My Boss ต้องการทราบอะไรจ๊ะ';     
                             }else{
                                 $textReplyMessage = 'สวัสดีจ้า คุณคือใคร';
                             }
