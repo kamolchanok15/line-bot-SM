@@ -5,7 +5,7 @@ header("content-type:application/json");
 //echo $jsondata
 
 // Read JSON Decode //
-    $jsonCode = file_get_contents("https://ampizz.000webhostapp.com/show.php");
+    $jsonCode = file_get_contents("https://ampizz.000webhostapp.com/show1.php");
 	$jsonDecode = json_decode($jsonCode, true);
 
 	foreach ($jsonDecode as $objResult)
